@@ -1,0 +1,242 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.logo {
+    display: flex;
+    width: 4rem;
+    height: 1.3rem;
+}
+
+.launch {
+    font-size: 3ch;
+    color: hsl(0,0%,59%);
+    font-weight: 300;
+}
+
+.soon {
+    color: hsl(209,33%,12%);
+    font-weight: 700;
+}
+
+.subscribe {
+    font-size: 1.6ch;
+    color: hsl(209,33%,12%);
+    margin-top: -1rem;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.5rem;
+}
+
+.form {
+    display: flex;
+    margin-top: 1rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputcontainer {
+    display: flex;
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    border: 2px #DEDEDE solid;
+    padding-left: 1rem;
+    font-size: 1.2ch;
+    /* color: #DEDEDE; */
+}
+
+.errorinputcontainer {
+    display: flex;
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    border: 2px hsl(354,100%,66%) solid;
+    padding-left: 1rem;
+    font-size: 1.2sch;
+    /* color: #DEDEDE; */
+}
+
+.notify {
+    display: flex;
+    height: 2.5rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    background-color: hsl(223,87%,63%);
+    border: none;
+    color: white;
+    font-size: 1.2ch;
+    font-weight: 600;
+    box-shadow: hsl(223,100%,82%) 0px 18px 50px -10px;
+}
+
+.notify:hover {
+    background-color: hsl(223,100%,82%);
+}
+
+.mobileerror {
+    display: none;
+}
+
+.validemail {
+    color: hsl(354,100%,66%);
+    margin-left: 1rem;
+    font-weight: 500;
+    margin-top: -1rem;
+    font-size: 1ch;
+}
+
+.details {
+    display: flex;
+    flex: 4;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.dashboard {
+    display: flex;
+    width: 33rem;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    flex-direction: column;
+}
+
+.socialcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius:50%;
+    color: hsl(223,87%,63%);
+    margin: 0.5rem;
+}
+
+.social:hover {
+    color: white;
+    background-color: hsl(223,87%,63%);
+}
+
+.copyright {
+    color: hsl(0,0%,59%);
+    font-size: 1ch;
+
+}
+
+@media (max-width: 540px) {
+    .inputcontainer {
+        width: 18rem;
+    }
+
+    .errorinputcontainer {
+        width: 18rem;
+    }
+
+    .notify {
+        width: 8em;
+    }
+
+    .dashboard {
+        width: 29rem;
+    }
+}
+
+@media (max-width: 476px) {
+    .form {
+        flex: 1;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .inputcontainer {
+        width: 20rem; 
+        margin-right: 0;
+        height: 2.7rem;
+        font-size: 1.5ch;
+        padding-left: 1.5rem;
+    }
+
+    .errorinputcontainer {
+        width: 20rem;
+        margin-right: 0;
+        height: 2.7rem;
+        font-size: 1.5ch;
+        padding-left: 1.5rem;
+    }
+
+    .notify {
+        margin-top: 0rem;
+        width: 20rem;
+        height: 2.7rem;
+        font-size: 1.6ch;
+    }
+
+    .validemail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        /* margin-top: -5rem; */
+        font-size: 1ch;
+    }
+
+    .dashboard {
+        width: 20rem;
+    }
+
+    .mobileerror {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+
+    .validemail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .desktoperror {
+        display: none;
+    }
+}
