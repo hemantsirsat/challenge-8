@@ -1,7 +1,11 @@
 import React from "react";
+import Image from "next/image";
+
 import styles from "../styles/Landing.module.css";
 import { GrFacebookOption, GrTwitter, GrInstagram } from 'react-icons/gr';
 
+import Logo from "../public/logo.svg";
+import Daskboard from "../public/illustration-dashboard.png";
 
 export default class Landing extends React.Component {
     constructor(props) {
@@ -34,8 +38,8 @@ export default class Landing extends React.Component {
         return(
             <div className={styles.container}>
                 <div className={styles.heading}>
-                    <img
-                        src="/logo.svg"
+                    <Image
+                        src={Logo}
                         alt="ping logo"
                         className={styles.logo}
                     />
@@ -77,11 +81,14 @@ export default class Landing extends React.Component {
                     </div>
                 </div>
                 <div className={styles.details}>
-                    <img 
-                        src="/illustration-dashboard.png"
-                        alt="dashboard"
-                        className={styles.dashboard}
-                    />
+                    <div className={styles.dashboard}>
+                        <Image
+                            src={Daskboard}
+                            alt="dashboard"
+                            // layout="fill"
+                            
+                        />
+                    </div>
                 </div>
                 <div className={styles.footer}>
                     <div className={styles.socialcontainer}>

@@ -15,7 +15,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   - [My process](#my-process)
     - [Built with](#built-with)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -42,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/hemantsirsat/challenge-8
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://your-live-site-url.com
 
 ## My process
 
