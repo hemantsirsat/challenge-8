@@ -9,6 +9,7 @@ export default class Landing extends React.Component {
         this.state={
             email: "",
             validemail: true,
+            maillength: 0,
         }
     }
 
@@ -51,7 +52,7 @@ export default class Landing extends React.Component {
                                 <div className={styles.mobileerror}>
                                     <p className={styles.validemail} style={{display:this.state.validemail?"none":"flex"}}>
                                         <i>
-                                            Please provide a valid email address
+                                            {this.state.email.length>0?"Please provide a valid email address":"Whoops! It looks like you forgot to add your email"}
                                         </i>
                                     </p>
                                 </div>
@@ -61,6 +62,7 @@ export default class Landing extends React.Component {
                                 onClick={()=>{
                                     this.checkmail(this.state.email);
                                 }}
+                                style={{marginTop: this.state.validemail?"-0.5rem":"1rem"}}
                             >
                                 Notify Me
                             </button>
@@ -68,7 +70,7 @@ export default class Landing extends React.Component {
                         <div className={styles.desktoperror}>
                             <p className={styles.validemail} style={{display:this.state.validemail?"none":"flex"}}>
                                 <i>
-                                    Please provide a valid email address
+                                    {this.state.email.length>0?"Please provide a valid email address":"Whoops! It looks like you forgot to add your email"}
                                 </i>
                             </p>
                         </div>
@@ -86,17 +88,17 @@ export default class Landing extends React.Component {
                         <a href="#"
                             className={styles.social}
                         >
-                            <GrFacebookOption />
+                            <GrFacebookOption size={15}/>
                         </a>
                         <a href="#"
                             className={styles.social}
                         >
-                            <GrTwitter />
+                            <GrTwitter size={15}/>
                         </a>
                         <a href="#"
                             className={styles.social}
                         >
-                            <GrInstagram />
+                            <GrInstagram size={15}/>
                         </a>
                     </div>
                     <div className={styles.copyright}>
