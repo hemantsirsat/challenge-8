@@ -67,6 +67,10 @@
     font-size: 1.2ch;
 }
 
+.inputcontainer:focus, .errorinputcontainer:focus {
+    outline: none;
+}
+
 .errorinputcontainer {
     display: flex;
     height: 2.5rem;
